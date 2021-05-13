@@ -12,6 +12,11 @@
             <template>Quagga bgp sessions</template>
             <name>Quagga bgp sessions</name>
             <description/>
+            <groups>
+                <group>
+                    <name>BGP Routers</name>
+                </group>
+            </groups>
             <applications>
                 <application>
                     <name>Quagga BGP sessions</name>
