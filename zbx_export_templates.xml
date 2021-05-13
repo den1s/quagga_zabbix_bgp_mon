@@ -2,6 +2,11 @@
 <zabbix_export>
     <version>4.2</version>
     <date>2019-10-02T14:28:37Z</date>
+    <groups>
+        <group>
+            <name>BGP Routers</name>
+        </group>
+    </groups>
     <templates>
         <template>
             <template>Quagga bgp sessions</template>
