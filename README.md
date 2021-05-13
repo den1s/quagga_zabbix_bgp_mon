@@ -16,4 +16,17 @@ Trigger if session change state.
 UserParameter=bgp.peers.discovery,/usr/local/bin/bgpmon.py discovery
 UserParameter=bgp.peer.state[*],/usr/local/bin/bgpmon.py neighbor_state -n $1
 ```
+- Provide vtysh access to user zabbix
+  - if you using quagga:
+  ```
+  sudo usermod -a -G quagga zabbix
+  ```
+  - if you using frr:
+  ```
+  usermod -a -G frrvty zabbix
+  ```
+- restart zabbix-agnet
+```
+systemctl restart zabbix-agent
+```
 - Import template file
