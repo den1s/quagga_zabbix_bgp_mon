@@ -23,7 +23,7 @@ UserParameter=bgp.peer.state[*],/usr/local/bin/bgpmon.py neighbor_state -n $1
   ```
   - if you using frr:
   ```
-  usermod -a -G frrvty zabbix
+  sudo usermod -a -G frrvty zabbix
   ```
 - restart zabbix-agnet
 ```
